@@ -14,18 +14,48 @@
         font-weight: 300;
         font-size: 1.3rem;
         line-height: 1.5rem;
-        padding: 0 20px;
       }
 
       h1 {
         font-size: 2rem;
         font-weight: 300;
       }
+
+      .wrapper {
+        left: 30px;
+        position: absolute;
+        z-index: 2;
+      }
+
+      .panel {
+        background-color: #000;
+        bottom: 200px;
+        left: 50px;
+        position: absolute;
+        top: 0;
+        width: 100px;
+        z-index: 1;
+      }
+
+      .panel:nth-child(2) {
+        left: 200px;
+        bottom: 100px;
+      }
+
+      .panel:nth-child(3) {
+        left: 350px;
+        bottom: 0;
+      }
     </style>
   </head>
   <body>
-    <h1>The operator</h1>
-    <p>In this space lies nothing and everything.</p>
-    <p>If you know where to navigate then you will find your way.</p>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="wrapper">
+      <h1>The operator</h1>
+      <p>In this space lies nothing and everything.</p>
+      <p>If you know where to navigate then you will find your way.</p>
+    </div>
   </body>
 </html>
