@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'spartan';
+  src: url('leaguespartan-bold.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #3afeb2;
+  color: #555;
+  font-family: spartan;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.89);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 65px;
+  z-index: 2;
+}
+
+header p {
+  color: #3afeb2;
+  font-size: 3.8rem;
+  line-height: 4.2rem;
+  text-indent: -5px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.89);
+  max-width: 1200px;
+  min-width: 320px;
+  width: 100%;
+  margin: 65px auto 0 auto;
+}
+
+section {
+  color: #45afdb;
+  font-weight: 100;
+}
+
+section img {
+  display: block;
+  width: 1190px;
+}
+
+section a span {
+  background-color: rgba(1, 1, 1, 0.8);
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 4rem;
+  color: #eee;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+section a {
+  display: block;
+  border: 5px solid transparent;
+  position: relative;
+}
+
+section a:hover {
+  border: 5px solid #3ab2fe;
+}
+
+section a:hover img {
+  opacity: 0.5;
+}
+
+section a:hover span {
+  display: block;
+}
+
+section > p {
+  padding: 130px 10px 10px;
+  font-size: 5rem;
+  line-height: 6rem;
+
+}
