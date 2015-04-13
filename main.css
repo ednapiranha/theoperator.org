@@ -71,6 +71,7 @@ header {
   top: 0;
   height: 65px;
   z-index: 2;
+  min-width: 800px;
 }
 
 header p {
@@ -91,6 +92,7 @@ h1 {
   min-width: 320px;
   width: 100%;
   margin: 65px auto 0 auto;
+  min-width: 800px;
 }
 
 section {
@@ -100,7 +102,8 @@ section {
 
 section img {
   display: block;
-  width: 1190px;
+  max-width: 1190px;
+  width: 100%;
 }
 
 section a span {
