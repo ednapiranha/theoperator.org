@@ -49,7 +49,8 @@ table {
 
 @font-face {
   font-family: 'spartan';
-  src: url('leaguespartan-bold.woff2');
+  src: url('fonts/leaguespartan-bold.woff2'),
+       url('fonts/leaguespartan-bold.woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -107,7 +108,7 @@ section img {
 }
 
 section a span {
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: rgba(1, 1, 1, 0.7);
   position: absolute;
   display: none;
   top: 0;
@@ -124,14 +125,24 @@ section a {
   display: block;
   border: 5px solid transparent;
   position: relative;
+  background-position: -10px;
 }
 
 section a:hover {
   border: 5px solid #3ab2fe;
 }
 
-section a:hover img {
-  opacity: 0.5;
+section .dm {
+  background-image: url('projects/drum_machine.png');
+  height: 300px;
+}
+
+section a {
+  background-color: #111;
+}
+
+section a:hover {
+  background-position: 180px 90px;
 }
 
 section a:hover span {
@@ -140,7 +151,7 @@ section a:hover span {
 
 section > p {
   padding: 130px 10px 10px;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 6rem;
 
 }
