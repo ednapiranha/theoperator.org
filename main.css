@@ -66,8 +66,13 @@ body {
 }
 
 body:hover {
+  background-image: url(background.png);
   background-position: -100px;
   transition: all 3.5s;
+}
+
+body:hover section a {
+  background-image: url(background.png);
 }
 
 .wrapper {
@@ -99,6 +104,7 @@ section a {
 }
 
 section a:hover {
+  background-image: url(background.png);
   background-position: 100px;
   color: #f0f;
   transition: all 1.5s;
