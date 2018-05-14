@@ -56,102 +56,57 @@ table {
 }
 
 body {
-  background-color: #3afeb2;
+  background-image: url(https://media3.giphy.com/media/BLwfryPQDxjgI/giphy.gif);
   color: #555;
   font-family: spartan;
   text-transform: uppercase;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  transition: all 3.5s;
 }
 
-header {
-  background-color: rgba(255, 255, 255, 0.89);
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 65px;
-  z-index: 2;
-  min-width: 800px;
-}
-
-header p {
-  color: #3afeb2;
-  font-size: 3.8rem;
-  line-height: 4.2rem;
-  text-indent: -5px;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 300;
+body:hover {
+  background-position: -100px;
+  transition: all 3.5s;
 }
 
 .wrapper {
-  background-color: rgba(255, 255, 255, 0.89);
-  max-width: 1200px;
-  min-width: 320px;
-  width: 100%;
-  margin: 65px auto 0 auto;
-  min-width: 800px;
+  padding-top: 100px;
 }
 
 section {
   color: #45afdb;
   font-weight: 100;
-}
-
-section img {
   display: block;
-  max-width: 1190px;
-  width: 100%;
 }
 
-section a span {
-  background-color: rgba(1, 1, 1, 0.7);
-  position: absolute;
-  display: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  font-size: 4rem;
-  color: #eee;
-  padding-top: 40px;
-  padding-left: 20px;
+section span {
+  display: block;
+  float: right;
 }
 
 section a {
+  background-image: url(https://media3.giphy.com/media/BLwfryPQDxjgI/giphy.gif);
   display: block;
-  border: 5px solid transparent;
   position: relative;
   background-position: -10px;
+  font-size: 4rem;
+  padding: 15px;
+  color: #eee;
+  text-decoration: none;
+  background-position: -100px;
+  transition: all 3.5s;
 }
 
 section a:hover {
-  border: 5px solid #3ab2fe;
-}
-
-section .dm {
-  background-image: url('projects/drum_machine.png');
-  height: 300px;
-}
-
-section a {
-  background-color: #111;
-}
-
-section a:hover {
-  background-position: 180px 90px;
-}
-
-section a:hover span {
-  display: block;
+  background-position: 100px;
+  color: #f0f;
+  transition: all 1.5s;
 }
 
 section > p {
-  padding: 130px 10px 10px;
-  font-size: 4rem;
-  line-height: 6rem;
+  padding: 10px;
+  font-size: 2rem;
+  line-height: 3rem;
 
 }
