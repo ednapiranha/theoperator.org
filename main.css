@@ -102,6 +102,7 @@ section a {
   text-decoration: none;
   background-position: -100px;
   transition: all 3.5s;
+  clip-path: polygon(0 0, 0 0px, 210px 180px, 1100px 0);
   -webkit-clip-path: polygon(0 0, 0 0px, 210px 180px, 1100px 0);
   letter-spacing: -1px;
 }
