@@ -90,7 +90,7 @@ section {
   float: right;
 }
 
-#contact:hover span:after {
+section:hover span:after, section:active span:after {
   content: ': j@yearunknown.com';
 }
 
