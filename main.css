@@ -85,9 +85,13 @@ section {
   display: block;
 }
 
-section span {
+#contact span {
   display: block;
   float: right;
+}
+
+#contact:hover span:after {
+  content: ': j@yearunknown.com';
 }
 
 section a {
