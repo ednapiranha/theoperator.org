@@ -95,12 +95,15 @@ section a {
   display: block;
   position: relative;
   background-position: -10px;
-  font-size: 4rem;
+  font-size: 3.5rem;
   padding: 15px;
   color: #eee;
+  text-indent: 20px;
   text-decoration: none;
   background-position: -100px;
   transition: all 3.5s;
+  -webkit-clip-path: polygon(0 0, 0 0px, 210px 180px, 1100px 0);
+  letter-spacing: -1px;
 }
 
 section a:hover {
