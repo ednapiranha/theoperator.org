@@ -47,80 +47,168 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: 'spartan';
-  src: url('fonts/leaguespartan-bold.woff2'),
-       url('fonts/leaguespartan-bold.woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  background-image: url(https://media3.giphy.com/media/BLwfryPQDxjgI/giphy.gif);
-  color: #555;
-  font-family: spartan;
-  text-transform: uppercase;
+  background-image: url(background.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #222;
+  font-family: Verdana, Arial, sans-serif;
   font-size: 1.1rem;
   line-height: 1.3rem;
-  transition: all 3.5s;
 }
 
-body:hover {
-  background-image: url(background.png);
-  background-position: -100px;
-  transition: all 3.5s;
+body > div {
+  display: flex;
+  flex-direction: row;
 }
 
-body:hover section a {
-  background-image: url(background.png);
-}
-
-.wrapper {
-  padding-top: 100px;
+header {
+  background-image: url(header.jpg);
+  background-size: 33.3%;
+  background-position: -10px -130px;
+  width: 100%;
+  height: 50px;
+  display: block;
 }
 
 section {
-  color: #45afdb;
-  font-weight: 100;
-  display: block;
-}
-
-#contact span {
-  display: block;
-  float: right;
-}
-
-section:hover span:after, section:active span:after {
-  content: ': j@yearunknown.com';
-}
-
-section a {
-  background-image: url(https://media3.giphy.com/media/BLwfryPQDxjgI/giphy.gif);
-  display: block;
+  background: linear-gradient(145deg, rgba(50, 200, 50, 0.6) 10%, rgba(11, 211, 190, 0.6) 30%);
+  padding: 20px;
+  max-width: 600px;
+  min-width: 300px;
+  width: 55%;
+  box-shadow: rgba(1, 1, 120, 0.8) 2px 0 20px;
   position: relative;
-  background-position: -10px;
-  font-size: 3.5rem;
-  padding: 15px;
-  color: #eee;
-  text-indent: 20px;
-  text-decoration: none;
-  background-position: -100px;
-  transition: all 3.5s;
-  clip-path: polygon(0 0, 0 0px, 210px 180px, 1100px 0);
-  -webkit-clip-path: polygon(0 0, 0 0px, 210px 180px, 1100px 0);
-  letter-spacing: -1px;
 }
 
-section a:hover {
-  background-image: url(background.png);
-  background-position: 100px;
-  color: #f0f;
-  transition: all 1.5s;
+.timeslice {
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 1;
+  font-size: 0.78rem;
+  line-height: 0.85rem;
+  background-color: rgb(200, 200, 10);
+  padding: 1px 3px;
+  border-radius: 2px;
 }
 
-section > p {
-  padding: 10px;
+#panel {
+  width: 50%;
+  max-width: 300px;
+  min-width: 100px;
+
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  margin: 10px 0;
+  color: rgba(55, 200, 120, 0.7);
+}
+
+h2 {
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2.1rem;
+  margin: 20px 0 10px 0;
+  color: rgba(55, 200, 120, 0.9);
+}
 
+p {
+  margin: 20px;
+  font-size: 0.95rem;
+  line-height: 1.2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: rgba(200, 200, 10, 0.8);
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+li {
+  position: relative;
+}
+
+li.stripe {
+  padding: 2%;
+  width: 98%;
+  margin: 10px 0;
+}
+
+li.stripe a {
+  background-color: rgba(200, 150, 110, 0.5);
+  padding: 2px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #faf;
+  display: block;
+  margin: 2px 1px;
+}
+
+li.mindpather {
+  margin-bottom: 30px;
+}
+
+li.mindpather a {
+  background-position: 0px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  text-decoration: none;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: rgba(244, 244, 244, 0.7);
+  text-align: center;
+}
+
+li a:hover {
+  background-position: -250px;
+}
+
+.mindpather a {
+  background-image: url(mindpather.jpg);
+  width: 250px;
+  height: 250px;
+}
+
+li span {
+  display: block;
+  color: #f0f;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+
+li.older {
+  opacity: 0.95;
+}
+
+li.older a {
+  font-size: 0.95rem;
+}
+
+li.oldest a {
+  opacity: 0.85;
+}
+
+li.oldest a {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 500px) {
+  section {
+    width:  80%;
+  }
+  body > div {
+    display: block;
+  }
+  header {
+    height: 35px;
+  }
 }
