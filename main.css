@@ -135,19 +135,19 @@ li {
 }
 
 li.stripe {
-  padding: 2%;
-  width: 98%;
+  padding: 0.5%;
+  width: 99%;
   margin: 10px 0;
 }
 
 li.stripe a {
-  background-color: rgba(200, 150, 110, 0.5);
-  padding: 2px;
-  font-size: 1.2rem;
+  background-color: rgba(200, 150, 110, 0.6);
+  padding: 1px;
+  font-size: 1rem;
   text-decoration: none;
-  color: #faf;
+  color: #fcf;
   display: block;
-  margin: 2px 1px;
+  margin: 4px 1px;
 }
 
 li.mindpather {
@@ -174,6 +174,13 @@ li a:hover {
   background-image: url(mindpather.jpg);
   width: 250px;
   height: 250px;
+}
+
+li p {
+  color: rgba(120, 20, 210, 0.9);
+  background-color: rgba(221, 221, 1, 0.5);
+  margin: 0;
+  padding: 2px;
 }
 
 li span {
