@@ -66,7 +66,7 @@ section {
 .timeslice {
   display: inline-block;
   position: absolute;
-  top: -10px;
+  bottom: -15px;
   left: -5px;
   z-index: 1;
   font-size: 0.78rem;
@@ -126,6 +126,10 @@ li a {
   text-decoration: none;
 }
 
+li a, li a:visited {
+  color: rgba(10, 10, 10, 0.9);
+}
+
 li {
   position: relative;
   margin: 0 10px;
@@ -138,10 +142,9 @@ li.stripe {
   margin: 20px 0;
 }
 
-li.stripe a {
+li.stripe {
   padding: 1px;
   font-size: 1rem;
-  text-decoration: none;
   color: rgba(10, 10, 10, 0.9);
   display: block;
   margin: 5px 3px;
@@ -162,7 +165,7 @@ li a span.writing {
 }
 
 li a span.audio {
-  color: rgb(110, 180, 30);
+  color: rgb(210, 10, 30);
 }
 
 li a span.art  {
@@ -186,6 +189,10 @@ li > span {
   position: absolute;
   left: 10px;
   bottom: 5px;
+}
+
+li.stripe.break {
+  margin-bottom: 25px;
 }
 
 li a:hover {
@@ -252,6 +259,9 @@ iframe {
 
 .links.long a {
   font-size: 0.85rem;
+  line-height: 1rem;
+  margin-bottom: 5px;
+  display: inline-block;
 }
 
 .links a {
