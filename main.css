@@ -111,6 +111,12 @@ h3 {
   margin: 10px 0;
 }
 
+p.intro {
+  background-color: rgba(230, 110, 70, 0.4);
+  padding: 10px 15px;
+  margin: 0;
+}
+
 p.intro span {
   color: rgb(20, 10, 220);
   font-weight: bold;
@@ -123,11 +129,11 @@ li a {
 li {
   position: relative;
   margin: 0 10px;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 li.stripe {
-  padding: 0.5%;
+  padding: 0.3%;
   width: 98%;
   margin: 20px 0;
 }
@@ -242,6 +248,10 @@ iframe {
   color: #fff;
   padding: 20px 3px 20px 20px;
   box-shadow: #111 1px 1px 80px;
+}
+
+.links.long a {
+  font-size: 0.85rem;
 }
 
 .links a {

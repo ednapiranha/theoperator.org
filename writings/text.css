@@ -1,4 +1,12 @@
-h1, h2, h3, p {
+h1, h2, h3, p, li {
   font-family: Verdana, Arial, sans-serif;
   font-weight: normal;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  background-color: #f0f;
 }
