@@ -76,6 +76,11 @@ section {
   border-radius: 2px;
 }
 
+p.intro {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
 h1 {
   font-size: 1.2rem;
   line-height: 2rem;
@@ -85,10 +90,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 2.1rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   margin: 20px 0 10px 0;
   color: rgba(55, 200, 120, 0.9);
+  text-transform: uppercase;
 }
 
 p {
@@ -103,6 +109,15 @@ h3 {
   color: rgba(200, 200, 10, 0.8);
   text-transform: uppercase;
   margin: 10px 0;
+}
+
+p.intro span {
+  color: rgb(20, 10, 220);
+  font-weight: bold;
+}
+
+li a {
+  text-decoration: none;
 }
 
 li {
@@ -128,13 +143,37 @@ li.stripe a {
   padding-left: 5px;
 }
 
+li.stripe a span {
+  font-style: italic;
+}
+
+li a span.game {
+  color: rgb(100, 110, 220);
+}
+
+li a span.writing {
+  color: rgb(50, 130, 170);
+}
+
+li a span.audio {
+  color: rgb(110, 180, 30);
+}
+
+li a span.art  {
+  color: rgb(100, 10, 200);
+}
+
+li a span.web {
+  color: rgb(200, 10, 160);
+}
+
 li p {
   color: rgba(20, 20, 210, 0.9);
   margin: 0;
   padding: 2px;
 }
 
-li span {
+li > span {
   display: block;
   color: #f0f;
   font-size: 0.8rem;
@@ -203,4 +242,12 @@ iframe {
   color: #fff;
   padding: 20px 3px 20px 20px;
   box-shadow: #111 1px 1px 80px;
+}
+
+.links a {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #111;
+  background-color: rgba(120, 255, 205, 0.85);
+  padding: 1px 2px;
 }
